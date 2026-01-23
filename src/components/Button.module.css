@@ -1,0 +1,29 @@
+.button {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    background: linear-gradient(135deg, var(--section-bg) 0%, var(--section-bg-hover) 100%);
+    color: var(--text-color);
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    text-align: left;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-primary);
+}
+
+.button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: var(--section-bg);
+    filter: grayscale(0.8);
+    transform: none;
+    box-shadow: none;
+}
